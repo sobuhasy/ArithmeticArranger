@@ -9,7 +9,7 @@ def arithmetic_arranger(problems):
         width = max(len(operand1), len(operand2)) + 2
 
         lineA += operand1.rjust(width) + " "
-        lineB += operator + " " + operand2.rjust(width - 2) * " "
+        lineB += operator + " " + operand2.rjust(width - 2) + " "
         lineC += "-" * width + ""
 
     lineA = lineA.rstrip()
