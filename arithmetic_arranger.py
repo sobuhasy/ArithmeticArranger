@@ -8,6 +8,14 @@ def arithmetic_arranger(problems):
 
         width = max(len(operand1), len(operand2)) + 2
 
-        line1 += operand1.rjust(width) + " "
-        line2 += operator + " " + operand2.rjust(width - 2) * " "
-        line3 += "-" * width + ""
+        lineA += operand1.rjust(width) + " "
+        lineB += operator + " " + operand2.rjust(width - 2) * " "
+        lineC += "-" * width + ""
+
+    lineA = lineA.rstrip()
+    lineB = lineB.rstrip()
+    lineC = lineC.rstrip()
+
+    arrangement = lineA + "\n" + lineB + "\n" + lineC
+
+    return arrangement
