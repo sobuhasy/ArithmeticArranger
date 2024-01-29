@@ -1,7 +1,7 @@
 def arithmetic_arranger(problems):
-    line1 = ""
-    line2 = ""
-    line3 = ""
+    lineA = ""
+    lineB = ""
+    lineC = ""
 
     for problem in problems:
         operand1, operator, operand2 = problem.split()
